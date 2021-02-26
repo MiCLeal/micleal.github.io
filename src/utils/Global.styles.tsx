@@ -1,3 +1,23 @@
+import { createGlobalStyle } from 'styled-components'
+
+export const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: Poppins;
+  background: #252323;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +34,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +45,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ff3939;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +56,5 @@
     transform: rotate(360deg);
   }
 }
+
+`
